@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>News</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        #container {
+            width: 400px;
+            padding: 30px;
+        }
+        
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #4C4B4B;
+            margin: 0 0 20px;
+            text-decoration: underline;
+        }
+        
+        .news {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .news:last-child {
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+        
+        .news h3 {
+            margin: 0 0 10px;
+            font-weight: 400;
+            color: #00babd;
+        }
+        
+        .news p {
+            margin: 0 0 10px;
+        }
+        
+        #error {
+            display: none;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Latest News</h1>
+        <div id="newsData">
+
+        </div>
+        <div id="error">
+            Issue with Api call
+        </div>
+    </div>
+</body>
+
+</html>
